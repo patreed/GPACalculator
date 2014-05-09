@@ -8,8 +8,9 @@ def gpaCalculator():
 		else:
 			credit = float(raw_input("How many credits was the next class? "))
 		grade = float(raw_input("What grade did you get in the class (in terms of number, ie: A = 4, A- = 3.666...)? "))
-		totalpoints += totalpoints + (credit * grade)
-		totalcredits += totalcredits + credit
+		totalpoints += (credit * grade)
+		totalcredits += credit
 	return totalpoints / totalcredits
+	
 
 print gpaCalculator()	
